@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "foundry",
+  "version": "${version}",
+  "name": "Foundry",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/cmxci/Foundryoundry"
+  },
+  "license": "GPL-3.0",
+  "environment": "*",
+  "entrypoints": {
+    "preLaunch": [
+      "com.github.cmxci.foundry.Foundry"
+    ]
+  },
+  "mixins": [
+    "foundry.mixins.json"
+  ],
+  "accessWidener": "foundry.accessWidener",
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
